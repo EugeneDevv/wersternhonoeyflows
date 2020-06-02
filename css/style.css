@@ -1,0 +1,201 @@
+@import url('../css/fonts.css');
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+    /* Theme Colors */
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* Gradient color */
+    --mango: linear-gradient(to right, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    /* theme font family */
+    --Abel:'Abel',cursive;
+    --Anton:'Anton',cursive;
+    --Josefin:'Josefin',cursive;
+    --Lexend:'Lexend',cursive;
+    --Livvic:'Livvic',cursive;
+
+
+}
+
+/* ---------------global classes-------------- */
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Lexend);
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+button .btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+/* ---------------global classes-------------- */
+
+/* navbar */
+
+.nav{
+    background: var(--white);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu{
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 80%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.collapse{
+    height: 22rem;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: var(--white);
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Lexend);
+}
+
+/* navbar */
+
+/*----------------- Main Content ------------------*/
+
+main .site-title{
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(89, 89, 201, 0.9) 0%, rgba(89, 89, 201, 0.9) 
+    100%), url("../img/logo1.png") center no-repeat;
+    background-size: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .main-message{
+    padding-top: 2rem;
+    text-align: center;
+    color: var(--white);
+}
+
+main .site-title .main-message h1, h3{
+    margin: .3rem;
+}
+
+main .site-title .main-message h2{
+    margin-top: 5rem;
+}
+
+/*----------------- Main Content ------------------*/
+
+/* Viewport less than or equal to 750px */
+
+@media only screen and (max-width: 750px){
+    .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+    .nav .toggle-collapse{
+        display: initial;
+    }
+
+    main .site-title{
+        background-size: 400px;
+    }
+
+    main .site-title .main-message h1{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .nav{
+        padding: 0 .2rem;
+    }
+    .nav .nav-brand a{
+        font-size: 1.5rem;
+    }
+    .nav .toggle-collapse{
+        margin-right: 0;
+        width: 90%;
+    }
+    main .site-title{
+        background-size: 350px;
+    }
+}
+
+/* Viewport less than or equal to 750px */
