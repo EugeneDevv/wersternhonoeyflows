@@ -59,6 +59,17 @@ h3{
     font-size: 1.3rem;
 }
 
+strong{
+    font-size: 1.3rem;
+}
+span{
+    font-family: var(--Abel);
+}
+
+.container{
+    margin: 0 5vw;
+}
+
 button .btn{
     border: none;
     border-radius: 2rem;
@@ -139,17 +150,20 @@ button .btn{
 /*----------------- Main Content ------------------*/
 
 main .site-title{
-    height: 100vh;
+    height: auto;
     background: linear-gradient(135deg, rgba(89, 89, 201, 0.9) 0%, rgba(89, 89, 201, 0.9) 
     100%), url("../img/logo1.png") center no-repeat;
     background-size: 1000px;
+    background-position: center;
     display: flex;
     justify-content: center;
 }
 
 main .site-title .main-message{
     padding-top: 2rem;
-    text-align: center;
+    padding-right: 5rem;
+    padding-left: 1rem;
+    text-align: left;
     color: var(--white);
 }
 
@@ -161,11 +175,75 @@ main .site-title .main-message h2{
     margin-top: 5rem;
 }
 
+main .site-title .main-message p{
+    font-size: 1rem;
+}
+
+/*------------- Products Carousel ------------------*/
+
+main .products{
+    background: url('../img/combs.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: auto;
+    width: 100%;
+}
+
+main .products .product-post{
+    padding-top: 6rem;
+}
+
+main .product-post .product-content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, .8) 50%, rgba(255, 255, 255, .8) 
+    100%);
+}
+
+main .product-content .product-title{
+    padding: 2rem 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+section .container .owl-nav{
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next{
+    color: var(--text-gray);
+    background: transparent;
+    font-size: 2rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    color: midnightblue;
+}
+
+.owl-theme .owl-nav [class*='owl-']{
+    outline: none;
+}
+
+/*------------- Products Carousel ------------------*/
 /*----------------- Main Content ------------------*/
 
 /* Viewport less than or equal to 750px */
 
 @media only screen and (max-width: 750px){
+    .nav .nav-items .nav-link{
+        padding: 0.9rem 1rem;
+        font-size: 0.9rem;
+    }
     .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
     }
@@ -191,7 +269,7 @@ main .site-title .main-message h2{
     }
     .nav .toggle-collapse{
         margin-right: 0;
-        width: 90%;
+        width: 95%;
     }
     main .site-title{
         background-size: 350px;
