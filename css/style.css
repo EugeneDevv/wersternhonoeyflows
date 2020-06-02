@@ -240,6 +240,9 @@ section .container .owl-nav{
 /* Viewport less than or equal to 750px */
 
 @media only screen and (max-width: 750px){
+    .nav{
+        padding: 0 0.5rem;
+    }
     .nav .nav-items .nav-link{
         padding: 0.9rem 1rem;
         font-size: 0.9rem;
