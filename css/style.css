@@ -7,7 +7,22 @@ html, body{
 }
 
 :root{
-    /* Theme Colors */
+    
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-midnignt: #191970;
+
+/* Theme Colors */
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
     --text-gray: #3f4954;
     --text-light: #686666da;
     --bg-color: #0f0f0f;
@@ -190,6 +205,10 @@ main .products{
     width: 100%;
 }
 
+main .products h1{
+    font-size: 2rem;
+    text-align: center;
+}
 main .products .product-post{
     padding-top: 6rem;
 }
@@ -198,7 +217,7 @@ main .product-post .product-content{
     display: flex;
     flex-direction: column;
     width: 80%;
-    margin: 3rem 2rem;
+    margin: 1rem 2rem;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
     justify-content: center;
     background: linear-gradient(135deg, rgba(255, 255, 255, .8) 50%, rgba(255, 255, 255, .8) 
@@ -227,7 +246,7 @@ section .container .owl-nav{
 
 .owl-theme .owl-nav [class*='owl-']:hover{
     background: transparent;
-    color: midnightblue;
+    color: var(--midnight);
 }
 
 .owl-theme .owl-nav [class*='owl-']{
@@ -235,6 +254,44 @@ section .container .owl-nav{
 }
 
 /*------------- Products Carousel ------------------*/
+
+/*---------------- Our services section ---------------*/
+
+.our-services {
+    background-color: var(--clr-dark);
+    background-image: url(../img/work_station.jpeg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: var(--clr-light);
+    text-align: center;
+}
+
+.section__title--services {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.section__title--services::after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    margin: 0.5em auto 1em;
+    background: var(--clr-light);
+    opacity: 0.25;
+}
+
+.services {
+    margin-bottom: 4em;
+}
+
+.service {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/*---------------- Our services section ---------------*/
+
 /*----------------- Main Content ------------------*/
 
 /* Viewport less than or equal to 750px */
