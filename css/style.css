@@ -166,10 +166,15 @@ button .btn{
 
 main .site-title{
     height: auto;
-    background: linear-gradient(135deg, rgba(89, 89, 201, 0.9) 0%, rgba(89, 89, 201, 0.9) 
+    /* background: linear-gradient(135deg, rgba(89, 89, 201, 0.9) 0%, rgba(89, 89, 201, 0.9) 
     100%), url("../img/logo1.png") center no-repeat;
     background-size: 1000px;
-    background-position: center;
+    background-position: center; */
+    background-color: var(--midnight);
+    background-image: url(../img/bc-bee-products.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: var(--clr-light);
     display: flex;
     justify-content: center;
 }
@@ -224,6 +229,11 @@ main .product-post .product-content{
     100%);
 }
 
+main .product-content img{
+    width: 100%;
+    height: 35vh;
+}
+
 main .product-content .product-title{
     padding: 2rem 1rem;
     justify-content: center;
@@ -258,8 +268,8 @@ section .container .owl-nav{
 /*---------------- Our services section ---------------*/
 
 .our-services {
-    background-color: var(--clr-dark);
-    background-image: url(../img/work_station.jpeg);
+    background-color: var(--midnight);
+    background-image: url(../img/bc-bee-products.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     color: var(--clr-light);
