@@ -17,6 +17,7 @@ html, body{
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-midnignt: #191970;
+    --clr-accent: #0eb1da;
 
 /* Theme Colors */
     --fs-h1: 3rem;
@@ -85,13 +86,14 @@ span{
     margin: 0 5vw;
 }
 
-button .btn{
+button.btn{
     border: none;
     border-radius: 2rem;
     padding: 1rem 3rem;
     font-size: 1rem;
     font-family: var(--Livvic);
     cursor: pointer;
+    color: var(--clr-dark);
 }
 /* ---------------global classes-------------- */
 
@@ -279,6 +281,7 @@ section .container .owl-nav{
 .section__title--services {
     color: var(--clr-accent);
     position: relative;
+    padding-top: 2rem;
 }
 
 .section__title--services::after {
@@ -291,14 +294,35 @@ section .container .owl-nav{
     opacity: 0.25;
 }
 
-.services {
-    margin-bottom: 4em;
+ .services {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+ .service{
+    max-width: 400px;
+    margin: 0;
+}
+.service + .service{
+    margin-left: 2em;
+} 
+
+.our-services .btn{
+    margin-bottom: 1.8rem;
+    background: var(--clr-accent);
 }
 
-.service {
+.our-services .btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: #fff;
+}
+/* .service {
     max-width: 500px;
     margin: 0 auto;
-}
+} */
 
 /*---------------- Our services section ---------------*/
 
@@ -327,6 +351,10 @@ section .container .owl-nav{
 
     main .site-title .main-message h1{
         font-size: 2rem;
+    }
+
+    .service + .service{
+        margin-right: 2em;
     }
 }
 
