@@ -89,7 +89,7 @@ span{
 button.btn{
     border: none;
     border-radius: 2rem;
-    padding: 1rem 3rem;
+    padding: 1rem 1.5rem;
     font-size: 1rem;
     font-family: var(--Livvic);
     cursor: pointer;
@@ -326,6 +326,70 @@ section .container .owl-nav{
 
 /*---------------- Our services section ---------------*/
 
+/*----------------- Equipments Section ----------------*/
+
+.equipments{
+    padding: 0;
+}
+
+.equipments-title{
+    text-align: center;
+    padding: 0;
+}
+
+.category-title,
+.category-footer{
+    text-align: center;
+}
+.category-title{
+    margin-top: 3rem;
+}
+
+.equipment-category{
+    /* text-align: center; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
+}
+
+.equipment-list{
+    margin: 1rem 0.5rem;
+    height: auto;
+    max-width: 400px;
+    padding: 1rem;
+    /* margin: 2rem; */
+    text-align: center;
+    color: var(--clr-light);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.equipment-list::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/bc-bee-products.jpg');
+    background-color: var(--clr-midnignt);
+    background-blend-mode: multiply;
+    background-size: cover;
+    z-index: -1;
+}
+
+.equipment-list + .equipment-list{
+    /* padding-left: 2rem; */
+}
+/*----------------- Equipments Section ----------------*/
+
 /*----------------- Main Content ------------------*/
 
 /* Viewport less than or equal to 750px */
@@ -355,6 +419,9 @@ section .container .owl-nav{
 
     .service + .service{
         margin-right: 2em;
+    }
+    .equipment-list + .equipment-list{
+        /* margin-right: 2rem; */
     }
 }
 
