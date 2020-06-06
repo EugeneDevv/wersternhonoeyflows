@@ -385,10 +385,133 @@ section .container .owl-nav{
     z-index: -1;
 }
 
-.equipment-list + .equipment-list{
-    /* padding-left: 2rem; */
-}
+/* .equipment-list + .equipment-list{
+    padding-left: 2rem;
+} */
 /*----------------- Equipments Section ----------------*/
+
+/*------------------ Contacts ------------------------*/
+
+.contact-container{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+main .contact-section{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(../img/bc-bee-products.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+#contacts .contact-container h2{
+    background: linear-gradient(rgba(0, 0,0,0.6), rgba(0,0,0,0.9), url(../img/bc-bee-products.jpg));
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: var(--clr-light);
+    letter-spacing: 2px;
+}
+
+#contacts .contact-container p{
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3%;
+    color: var(--white);
+    letter-spacing: 3px;
+}
+
+.contact-form i.fas{
+    font-size: 22px;
+    padding: 3%;
+    border-radius: 80%;
+    background-color: none;
+    margin: 2%;
+    cursor: pointer;
+    border: 2px solid rgb(190, 190, 190);
+    color: rgb(190, 190, 190);
+}
+
+.contact-form i.fas:hover{
+    cursor: pointer;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.contact-form{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* grid-gap: 5px; */
+}
+
+.form-info{
+    font-size: 16px;
+    font-style: italic;
+    color: var(--white);
+    letter-spacing: 2px;
+}
+
+input{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    background-color: rgba(136, 133, 133, 0.5);
+    color: var(--white);
+    border: none;
+    outline: none;
+}
+
+input::placeholder{
+    color: var(--white);
+}
+
+textarea{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    background-color: rgba(136, 133, 133, 0.5);
+    color: var(--white);
+    border: none;
+    outline: none;
+}
+
+textarea::placeholder{
+    color: var(--white);
+}
+
+.submit{
+    width: 40%;
+    background: none;
+    padding: 4px;
+    outline: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-left: 3%;
+    border: 2px solid rgb(190,190,190);
+    color: rgb(190,190,190);
+}
+
+.submit:hover{
+    border: 1px solid var(--white);
+    color: var(--white);
+    cursor: pointer;
+}
+
+footer{
+    width: auto;
+    height: auto;
+    padding: 1rem 0;
+    background-color: #d7d4ed;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+/*------------------ Contacts ------------------------*/
 
 /*----------------- Main Content ------------------*/
 
@@ -423,6 +546,14 @@ section .container .owl-nav{
     .equipment-list + .equipment-list{
         /* margin-right: 2rem; */
     }
+    .contact-section .contact-form{
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    .contact-section .submit{
+        width: 60%;
+    }
 }
 
 @media only screen and (max-width: 350px){
@@ -438,6 +569,19 @@ section .container .owl-nav{
     }
     main .site-title{
         background-size: 350px;
+    }
+    .contact-section .contact-form{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .contact-form i.fas{
+        font-size: 18px;
+        text-align: left;
+    }
+    .form-info{
+        font-size: 12px;
+        text-align: left;
     }
 }
 
