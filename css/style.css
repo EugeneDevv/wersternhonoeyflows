@@ -76,7 +76,7 @@ h3{
 }
 
 strong{
-    font-size: 1.3rem;
+    font-size: 2rem;
 }
 span{
     font-family: var(--Abel);
@@ -172,9 +172,10 @@ main .site-title{
     100%), url("../img/logo1.png") center no-repeat;
     background-size: 1000px;
     background-position: center; */
-    background-color: var(--midnight);
-    background-image: url(../img/bc-bee-products.jpg);
+    background: linear-gradient(rgba(0, 0,0,0.6), rgba(0,0,0,0.9)), url(../img/logo1.png);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-blend-mode: multiply;
     color: var(--clr-light);
     display: flex;
@@ -198,7 +199,8 @@ main .site-title .main-message h2{
 }
 
 main .site-title .main-message p{
-    font-size: 1rem;
+    font-size: 1.5rem;
+    margin-right: 30%;
 }
 
 /*------------- Products Carousel ------------------*/
@@ -270,10 +272,10 @@ section .container .owl-nav{
 /*---------------- Our services section ---------------*/
 
 .our-services {
-    background-color: var(--midnight);
-    background-image: url(../img/bc-bee-products.jpg);
+    background: linear-gradient(rgba(0, 0,0,0.6), rgba(0,0,0,0.9)), url(../img/site-setup.jpg);
     background-size: cover;
     background-blend-mode: multiply;
+    background-position: center;
     color: var(--clr-light);
     text-align: center;
 }
@@ -378,10 +380,10 @@ section .container .owl-nav{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../img/bc-bee-products.jpg');
-    background-color: var(--clr-midnignt);
+    background: linear-gradient(rgba(0, 0,0,0.6), rgba(0,0,0,0.9)), url(../img/hive-tools.jpg);
     background-blend-mode: multiply;
     background-size: cover;
+    background-position: center;
     z-index: -1;
 }
 
@@ -399,7 +401,7 @@ section .container .owl-nav{
 }
 
 main .contact-section{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(../img/bc-bee-products.jpg);
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(../img/contact-us.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -408,7 +410,6 @@ main .contact-section{
 }
 
 #contacts .contact-container h2{
-    background: linear-gradient(rgba(0, 0,0,0.6), rgba(0,0,0,0.9), url(../img/bc-bee-products.jpg));
     text-align: center;
     text-decoration: underline;
     text-underline-position: under;
@@ -518,6 +519,9 @@ footer{
 /* Viewport less than or equal to 750px */
 
 @media only screen and (max-width: 750px){
+    strong{
+        font-size: 1.3rem;
+    }
     .nav{
         padding: 0 0.5rem;
     }
@@ -539,6 +543,12 @@ footer{
     main .site-title .main-message h1{
         font-size: 2rem;
     }
+
+    main .site-title .main-message p{
+        font-size: 1rem;
+        margin-right: 1%;
+    }
+    
 
     .service + .service{
         margin-right: 2em;
@@ -569,6 +579,10 @@ footer{
     }
     main .site-title{
         background-size: 350px;
+    }
+    main .site-title .main-message p{
+        font-size: 1rem;
+        margin-right: 1%;
     }
     .contact-section .contact-form{
         display: block;
