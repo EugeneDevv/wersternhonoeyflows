@@ -398,6 +398,7 @@ section .container .owl-nav{
     width: 95%;
     margin: auto;
     overflow: hidden;
+    justify-content: left;
 }
 
 main .contact-section{
@@ -428,8 +429,8 @@ main .contact-section{
 }
 
 .contact-form i.fas{
-    font-size: 22px;
-    padding: 3%;
+    font-size: 16px;
+    padding: 1%;
     border-radius: 80%;
     background-color: none;
     margin: 2%;
@@ -439,6 +440,8 @@ main .contact-section{
 }
 
 .contact-form i.fas:hover{
+    text-align: left;
+    justify-content: left;
     cursor: pointer;
     border: 2px solid #fff;
     color: #fff;
@@ -451,13 +454,14 @@ main .contact-section{
 }
 
 .form-info{
+    text-align: center;
     font-size: 16px;
     font-style: italic;
     color: var(--white);
     letter-spacing: 2px;
 }
 
-input{
+/* input{
     padding: 10px;
     margin: 10px;
     width: 70%;
@@ -502,15 +506,18 @@ textarea::placeholder{
     border: 1px solid var(--white);
     color: var(--white);
     cursor: pointer;
-}
+} */
 
 footer{
     width: auto;
     height: auto;
-    padding: 1rem 0;
+    padding: 0.2rem 0;
     background-color: #d7d4ed;
     text-align: center;
     color: rgba(0, 0, 0, 0.7);
+}
+footer p{
+    font-size: 1rem;
 }
 /*------------------ Contacts ------------------------*/
 
