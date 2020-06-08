@@ -17,7 +17,7 @@ html, body{
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-midnignt: #191970;
-    --clr-accent: #0eb1da;
+    --clr-accent: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 
 /* Theme Colors */
     --fs-h1: 3rem;
@@ -26,6 +26,7 @@ html, body{
     --fs-body: 1rem;
     --text-gray: #3f4954;
     --text-light: #686666da;
+    --text-accent: #a1c4fd;
     --bg-color: #0f0f0f;
     --white: #ffffff;
     --midnight: #104f55;
@@ -91,10 +92,13 @@ button.btn{
     border-radius: 2rem;
     padding: 1rem 1.5rem;
     font-size: 1rem;
+    font-weight: bold;
     font-family: var(--Livvic);
     cursor: pointer;
     color: var(--clr-dark);
+    background: var(--clr-accent);
 }
+
 /* ---------------global classes-------------- */
 
 /* navbar */
@@ -172,7 +176,7 @@ main .site-title{
     100%), url("../img/logo1.png") center no-repeat;
     background-size: 1000px;
     background-position: center; */
-    background: linear-gradient(rgba(0, 0,0,0.6), rgba(0,0,0,0.9)), url(../img/logo1.png);
+    background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/comb-bees.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -201,6 +205,23 @@ main .site-title .main-message h2{
 main .site-title .main-message p{
     font-size: 1.5rem;
     margin-right: 30%;
+}
+
+main .site-title .main-message .btn{
+    margin-left: 35%;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+main .site-title .main-message .btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: #fff;
+}
+
+main .site-title .main-message .btn i{
+    margin-right: .6rem;
+    font-weight: bold;
 }
 
 /*------------- Products Carousel ------------------*/
@@ -272,7 +293,7 @@ section .container .owl-nav{
 /*---------------- Our services section ---------------*/
 
 .our-services {
-    background: linear-gradient(rgba(0, 0,0,0.6), rgba(0,0,0,0.9)), url(../img/site-setup.jpg);
+    background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/site-setup.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     background-position: center;
@@ -281,7 +302,7 @@ section .container .owl-nav{
 }
 
 .section__title--services {
-    color: var(--clr-accent);
+    color: var(--text-accent);
     position: relative;
     padding-top: 2rem;
 }
@@ -380,19 +401,121 @@ section .container .owl-nav{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0,0,0.6), rgba(0,0,0,0.9)), url(../img/hive-tools.jpg);
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
     z-index: -1;
 }
-
+.equipment-list.hives::before{
+    background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/hives.jpg);
+}
+.equipment-list.bee-suit::before{
+    background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/site-survey.jpg);
+}
+.equipment-list.smoker::before{
+    background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/smoker.jpg);
+}
+.equipment-list.glove::before{
+    background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/hives.jpg);
+}
+.equipment-list.gumboot::before{
+    background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/hives.jpg);
+}
+.equipment-list.harvesting::before{
+    background: linear-gradient(rgba(0, 0,0,0.8), rgba(0,0,0,0.5)), url(../img/hive-tools.jpg);
+}
+.equipment-list.beeplant::before{
+    background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/bee-nector.jpg);
+}
 /* .equipment-list + .equipment-list{
     padding-left: 2rem;
 } */
 /*----------------- Equipments Section ----------------*/
 
 /*------------------ Contacts ------------------------*/
+     /*--------- Testimonials -------------------*/
+
+main .testimonials{
+    background: /* linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)),*/ url(../img/combs.jpg);
+    background-repeat: no-repeat;
+    background-size: 1050px;
+    background-position: right;
+    width: 100%;
+    height: auto;
+}
+main .testimonials .testimonial{
+    padding-top: 1rem;
+}
+
+main .testimonials .testi-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 1.5rem 1rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, .8) 50%, rgba(255, 255, 255, .8) 
+    100%);
+}
+     /*--------- Testimonials -------------------*/
+/* .testimonial-section{
+    justify-content: center;
+    text-align: center;
+}
+.testimonials{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/combs.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.testimonials::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4.7rem;
+}
+
+.testimonial{
+    width: 100%;
+    color: var(--clr-light);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+} */
+
+.testimonial-customer img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    border: 3px solid var(--text-accent);
+}
+
+.testimonial-customer{
+    margin-bottom: -4rem;
+}
+.testimonial-text-box{
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.testimonial-text-box i{
+    position: absolute;
+    top: -7.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8rem;
+    color: var(--text-accent);
+    opacity: .8;
+    z-index: -1;
+} 
 
 .contact-container{
     width: 95%;
@@ -402,7 +525,7 @@ section .container .owl-nav{
 }
 
 main .contact-section{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(../img/contact-us.jpg);
+    background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/contact-us.jpg);
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -461,6 +584,18 @@ main .contact-section{
     letter-spacing: 2px;
 }
 
+.contact-section .move-up{
+    position: absolute;
+    right: 6%;
+    margin-top: -9rem;
+}
+.contact-section .move-up span{
+    color: var(--text-accent);
+}
+.contact-section .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
 /* input{
     padding: 10px;
     margin: 10px;
@@ -519,6 +654,11 @@ footer{
 footer p{
     font-size: 1rem;
 }
+footer a{
+    border: 2px solid var(--clr-midnignt);
+    padding: 1px;
+    color: var(--clr-midnignt);
+}
 /*------------------ Contacts ------------------------*/
 
 /*----------------- Main Content ------------------*/
@@ -543,10 +683,6 @@ footer p{
         display: initial;
     }
 
-    main .site-title{
-        background-size: 400px;
-    }
-
     main .site-title .main-message h1{
         font-size: 2rem;
     }
@@ -555,7 +691,12 @@ footer p{
         font-size: 1rem;
         margin-right: 1%;
     }
-    
+    main .site-title .main-message .btn{
+        margin-left: 30%;
+        border-radius: 2rem;
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+    }
 
     .service + .service{
         margin-right: 2em;
@@ -584,9 +725,7 @@ footer p{
         margin-right: 0;
         width: 95%;
     }
-    main .site-title{
-        background-size: 350px;
-    }
+
     main .site-title .main-message p{
         font-size: 1rem;
         margin-right: 1%;
@@ -594,7 +733,6 @@ footer p{
     .contact-section .contact-form{
         display: block;
         width: 100%;
-        text-align: center;
     }
     .contact-form i.fas{
         font-size: 18px;

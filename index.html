@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Western Honey Flows</title>
 
+    <!--------------- Swiper ------------------>
+    <link rel="stylesheet" href="./css/swiper.min.css">
+
     <!-- Font awesome Icons -->
     <link rel="stylesheet" href="./css/all.css">
 
@@ -17,7 +20,7 @@
 </head>
 <body>
                  <!-- Navigation -->
-    <nav class="nav">
+    <nav class="nav" id="nav">
         <div class="nav-menu flex-row">
             <div class="nav-brand">
                 <a href="#" class="text-gray">Western Honey Flows</a>
@@ -68,7 +71,7 @@
                 Western Honey Flows lies in the front line to ensuring bee keepers are assisted in starting up and propping their bee keeping enterprises to commercial level for sustainable income.
                 Bee products such as propolis, bee venom, royal jelly, honey and bee pollen fetch a good price in the market and thus can offer alternative income. Start your journey today and begin to realise the bee is beneficial.
             </p>
-            
+            <a href="#contacts"><button class="btn"><i class="fas fa-phone-alt"></i>Call Us Now...</button></a>
         </div>
     </section>
 
@@ -80,7 +83,7 @@
             <div class="container">
                 <div class="owl-carousel owl-theme product-post">
                     <div class="product-content">
-                        <img src="./img/honey.jpg" alt="product-1">
+                        <img src="./img/honey.jpg" alt="product-1">0710313879
                         <div class="product-title">
                             <h2>Honey</h2>
                             <p>
@@ -218,7 +221,7 @@
                 </p>
             </div>   <!-- service -->
         </div>
-        <button class="btn">Our Happy Clients</button>
+        <a href="#testimonials"><button class="btn">Our Happy Clients</button></a>
     </section>
 
     <!--------------Our Services ---------------->
@@ -238,7 +241,7 @@
                     <p>We supply the following categories of hives.</p>
                 </div>
                 <div class="equipment-category">
-                    <div class="equipment-list">
+                    <div class="equipment-list hives">
                         <p>The Langstroth - Ksh 6,500</p>
                         <p>The Flow Hive - Ksh 50,000</p>
                         <p>The Kenya Top Bar - Ksh 5,500</p>
@@ -262,7 +265,7 @@
                     </p>
                 </div>
                 <div class="equipment-category">
-                    <div class="equipment-list">
+                    <div class="equipment-list bee-suit">
                         <h3>Bee Suit</h3>
                         <p>
                             Our bee suits are made of  high quality materials and designed to ensure the bee keeper is protected at 99%.
@@ -275,7 +278,7 @@
                             </p>
                             <p>Each bee suit comes with a pair of gloves and instruction manual on how to wear it safely.</p>
                     </div>
-                    <div class="equipment-list">
+                    <div class="equipment-list smoker">
                         <h3>Smokers</h3>
                         <p>
                             Smokers are often used to cut the alarm pheromone communication between bees, when opening the hive for inspection or harvesting, 
@@ -285,7 +288,7 @@
                         <p>Electric smoker with USB charge</p>
                         <p>AA Battery Electric smoker</p>
                     </div>
-                    <div class="equipment-list">
+                    <div class="equipment-list glove">
                         <h3>Gloves</h3>
                         <p>
                             Gloves provide protection to the bee keepers hands thus preventing him from being stung. 
@@ -296,7 +299,7 @@
                             The short wrist length gloves - Ksh 700
                         </p>
                     </div>
-                    <div class="equipment-list">
+                    <div class="equipment-list gumboot">
                         <h3>Gumboots</h3>
                         <p>Bee keepers need gumboots to protect their feet from stings.</p>
                         <p>We supply high quality gumboots at Ksh 900.</p>
@@ -306,7 +309,7 @@
                     <h2>Harvesting Equipments</h2>
                 </div>
                 <div class="equipment-category">
-                    <div class="equipment-list">
+                    <div class="equipment-list harvesting">
                         <p>Hive tool - ksh 1500</p>
                         <p>Uncapping fork - ksh 1000</p>
                         <p>3 frame Plastic frame manual extractor - ksh 35000</p>
@@ -327,7 +330,7 @@
                     </p>
                 </div>
                 <div class="equipment-category">
-                <div class="equipment-list">
+                <div class="equipment-list beeplant">
                     <p>Caliandra - Ksh 30</p>
                     <p>French Lavender - Ksh 300</p>
                     <p>Snow drop - Ksh 30</p>
@@ -347,7 +350,50 @@
     </section>
     <!---------------- Equipments --------------->
 
-    <section class="beeplants" id="beeplants"></section>
+    <!--------------- Testimonials ----------->
+<section>
+    <div class="testimonials" id="testimonials">
+        <h1>Testimonials</h1>
+        <div class="owl-carousel owl-theme testimonial">
+            <div class="testi-content">
+                <div class="testimonial">
+                    <div class="testimonial-text-box">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum alias quis maiores et harum ab iste dolorum blanditiis, temporibus rem assumenda maxime. 
+                        </p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial-customer">
+                        <img src="./img/bee-wax-candles.jpg" alt="">
+                        <h3>Eugene Awilly</h3>
+                        <a href="#testimonials"><button class="btn">See photos</button></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- <section class="testimonial-section">
+        <h1>Testimonials</h1>
+    <div class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="testimonial">
+                <div class="testimonial-text-box">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum alias quis maiores et harum ab iste dolorum blanditiis, temporibus rem assumenda maxime. 
+                    </p>
+                    <i class="fas fa-quote-right"></i>
+                </div>
+                <div class="testimonial-customer">
+                    <img src="./img/bee-wax-candles.jpg" alt="">
+                    <h3>Eugene Awilly</h3>
+                    <a href="#testimonials"><button class="btn">See photos</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+    <!--------------- Testimonials ----------->
 
     <!---------------- Contacts --------------->
 
@@ -361,7 +407,7 @@
             <div>
                 <i class="fas fa-map-marker-alt"></i><span class="form-info"> Rich Rose Building Kwhisero, Kakamega</span><br>       
                 <i class="fas fa-phone-alt"></i><span class="form-info"> Phone: 0101288281/0799288181</span><br>
-                <i class="fas fa-envelope"></i><span class="form-info"> Email: info@westerhoneyflows.co.ke</span>
+                <i class="fas fa-envelope"></i><span class="form-info"> Email: info@westernhoneyflows.co.ke</span>
             </div>
 
             <!-- second grid -->
@@ -377,6 +423,9 @@
             </div> -->
         </div>
         </div>
+        <div class="move-up">
+            <a href="#nav"><span><i class="fas fa-arrow-circle-up fa-2x"></i></span></a>
+        </div>
     </section>
 
     <!---------------- Contacts --------------->
@@ -387,7 +436,7 @@
     <!---------- Footer Section ---------------->
 
     <footer>
-        <p>&copy 2020 Western Honey Flows. All rights reserved.</p>
+        <p>&copy 2020 Western Honey Flows <strong>|</strong> Developed by <a href="eugenedevv.github.io/portfolio/">eugeneDevv</a></p>
     </footer>
 
     <!---------- Footer Section ---------------->
@@ -397,6 +446,9 @@
 
 <!--------- Owl-Carousel --------->
 <script src="./js/owl.carousel.min.js"></script>
+
+    <!------------ Swiper framework ---------->
+    <script src="./js/swiper.min.js"></script>
 
    <!-- Custom JavaScript file  -->
    <script src="./js/main.js"></script>
