@@ -33,6 +33,9 @@ $(document).ready(function(){
         navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
         responsive: responsive
     });
+
+    //AOS instance
+    AOS.init();
 });
 
 // const selectElement = (s) => document.querySelector(s);

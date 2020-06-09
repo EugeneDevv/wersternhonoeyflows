@@ -433,45 +433,20 @@ section .container .owl-nav{
 /*----------------- Equipments Section ----------------*/
 
 /*------------------ Contacts ------------------------*/
-     /*--------- Testimonials -------------------*/
-
-main .testimonials{
-    background: /* linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)),*/ url(../img/combs.jpg);
-    background-repeat: no-repeat;
-    background-size: 1050px;
-    background-position: right;
+.testimonial-section{
     width: 100%;
     height: auto;
-}
-main .testimonials .testimonial{
-    padding-top: 1rem;
-}
-
-main .testimonials .testi-content{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 80%;
-    margin: 1.5rem 1rem;
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
-    justify-content: center;
-    background: linear-gradient(135deg, rgba(255, 255, 255, .8) 50%, rgba(255, 255, 255, .8) 
-    100%);
-}
-     /*--------- Testimonials -------------------*/
-/* .testimonial-section{
-    justify-content: center;
-    text-align: center;
-}
-.testimonials{
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/combs.jpg);
+    /* background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/combs.jpg); */
+    background-image: url(../img/combs.jpg);
     background-size: cover;
-    position: relative;
+    background-repeat: no-repeat;
+    background-position: right;
 }
-
-.testimonials::before{
+.testimonial-section h1{
+    text-align: center;
+    font-size: 2rem;
+}
+/* .testimonials::before{
     content: "";
     position: absolute;
     top: 0;
@@ -489,13 +464,29 @@ main .testimonials .testi-content{
     transform: translate(-50%, -50%);
     text-align: center;
 } */
+.testimonial-section .testimonial .testimonial-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    color: var(--clr-light);
+    background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4));
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0,4);
+}
+.testimonial-section .testimonial .testimonial-content .testimonial-customer{
+    padding: 2rem 0;
+    justify-content: center;
+}
 
-.testimonial-customer img{
-    width: 10rem;
-    height: 10rem;
+.testimonial-section .testimonial-customer img{
+    margin-left: 33%;
+    width: 5rem;
+    height: 5rem;
     border-radius: 100%;
     border: 3px solid var(--text-accent);
 }
+
 
 .testimonial-customer{
     margin-bottom: -4rem;
@@ -504,6 +495,12 @@ main .testimonials .testi-content{
     padding: 0 1.5rem;
     margin-top: 2rem;
     position: relative;
+}
+
+.testimonial-section .testimonial .testimonial-content .testimonial-text-box .btn{
+    padding: .3rem .5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
 }
 
 .testimonial-text-box i{
@@ -515,7 +512,7 @@ main .testimonials .testi-content{
     color: var(--text-accent);
     opacity: .8;
     z-index: -1;
-} 
+}
 
 .contact-container{
     width: 95%;
@@ -655,9 +652,9 @@ footer p{
     font-size: 1rem;
 }
 footer a{
-    border: 2px solid var(--clr-midnignt);
+    border: 2px solid var(--midnight);
     padding: 1px;
-    color: var(--clr-midnignt);
+    color: var(--midnight);
 }
 /*------------------ Contacts ------------------------*/
 
