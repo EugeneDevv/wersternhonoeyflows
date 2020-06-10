@@ -231,6 +231,7 @@ main .products{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
+
     height: auto;
     width: 100%;
 }
@@ -433,20 +434,15 @@ section .container .owl-nav{
 /*----------------- Equipments Section ----------------*/
 
 /*------------------ Contacts ------------------------*/
-.testimonial-section{
+.testimonials{
     width: 100%;
-    height: auto;
-    /* background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/combs.jpg); */
-    background-image: url(../img/combs.jpg);
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/combs.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
+    position: relative;
 }
-.testimonial-section h1{
-    text-align: center;
-    font-size: 2rem;
-}
-/* .testimonials::before{
+
+.testimonials::before{
     content: "";
     position: absolute;
     top: 0;
@@ -463,30 +459,14 @@ section .container .owl-nav{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-} */
-.testimonial-section .testimonial .testimonial-content{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 80%;
-    margin: 3rem 2rem;
-    color: var(--clr-light);
-    background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4));
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0,4);
-}
-.testimonial-section .testimonial .testimonial-content .testimonial-customer{
-    padding: 2rem 0;
-    justify-content: center;
 }
 
-.testimonial-section .testimonial-customer img{
-    margin-left: 33%;
+.testimonial-customer img{
     width: 5rem;
     height: 5rem;
     border-radius: 100%;
     border: 3px solid var(--text-accent);
 }
-
 
 .testimonial-customer{
     margin-bottom: -4rem;
@@ -495,12 +475,6 @@ section .container .owl-nav{
     padding: 0 1.5rem;
     margin-top: 2rem;
     position: relative;
-}
-
-.testimonial-section .testimonial .testimonial-content .testimonial-text-box .btn{
-    padding: .3rem .5rem;
-    font-weight: normal;
-    margin-bottom: 1rem;
 }
 
 .testimonial-text-box i{
