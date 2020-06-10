@@ -107,7 +107,7 @@ button.btn{
     background: var(--white);
     padding: 0 2rem;
     height: 0rem;
-    min-height: 11.5vh;
+    min-height: 10vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
@@ -133,7 +133,6 @@ button.btn{
 .nav .toggle-collapse .toggle-icons i{
     font-size: 1.4rem;
     color: var(--text-gray);
-    margin-top: 1rem;
 }
 
 .collapse{
@@ -162,22 +161,24 @@ button.btn{
 
 .nav .nav-brand a{
     font-size: 1.6rem;
-    padding: 1rem 0;
+    padding: 0;
     display: block;
     font-family: var(--Lexend);
 }
 .nav .nav-brand img{
-    width: 3rem;
-    height: 3rem;
-    margin: 0;
+    width: 5rem;
+    height: 3.5rem;
 }
-
 /* navbar */
 
 /*----------------- Main Content ------------------*/
 
 main .site-title{
     height: auto;
+    /* background: linear-gradient(135deg, rgba(89, 89, 201, 0.9) 0%, rgba(89, 89, 201, 0.9) 
+    100%), url("../img/logo1.png") center no-repeat;
+    background-size: 1000px;
+    background-position: center; */
     background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/comb-bees.jpg);
     background-size: cover;
     background-position: center;
@@ -233,7 +234,6 @@ main .products{
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-
     height: auto;
     width: 100%;
 }
@@ -345,6 +345,10 @@ section .container .owl-nav{
     border: 1px solid var(--white);
     color: #fff;
 }
+/* .service {
+    max-width: 500px;
+    margin: 0 auto;
+} */
 
 /*---------------- Our services section ---------------*/
 
@@ -373,6 +377,8 @@ section .container .owl-nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
 }
 
 .equipment-list{
@@ -380,6 +386,7 @@ section .container .owl-nav{
     height: auto;
     max-width: 400px;
     padding: 1rem;
+    /* margin: 2rem; */
     text-align: center;
     color: var(--clr-light);
     position: relative;
@@ -423,19 +430,26 @@ section .container .owl-nav{
 .equipment-list.beeplant::before{
     background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/bee-nector.jpg);
 }
-
+/* .equipment-list + .equipment-list{
+    padding-left: 2rem;
+} */
 /*----------------- Equipments Section ----------------*/
 
 /*------------------ Contacts ------------------------*/
-.testimonials{
+.testimonial-section{
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/combs.jpg);
+    height: auto;
+    /* background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/combs.jpg); */
+    background-image: url(../img/combs.jpg);
     background-size: cover;
-    position: relative;
+    background-repeat: no-repeat;
+    background-position: right;
 }
-
-.testimonials::before{
+.testimonial-section h1{
+    text-align: center;
+    font-size: 2rem;
+}
+/* .testimonials::before{
     content: "";
     position: absolute;
     top: 0;
@@ -443,7 +457,6 @@ section .container .owl-nav{
     width: 100%;
     height: 4.7rem;
 }
-
 .testimonial{
     width: 100%;
     color: var(--clr-light);
@@ -452,14 +465,30 @@ section .container .owl-nav{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+} */
+.testimonial-section .testimonial .testimonial-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    color: var(--clr-light);
+    background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4));
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0,4);
+}
+.testimonial-section .testimonial .testimonial-content .testimonial-customer{
+    padding: 2rem 0;
+    justify-content: center;
 }
 
-.testimonial-customer img{
+.testimonial-section .testimonial-customer img{
+    margin-left: 35%;
     width: 5rem;
     height: 5rem;
     border-radius: 100%;
     border: 3px solid var(--text-accent);
 }
+
 
 .testimonial-customer{
     margin-bottom: -4rem;
@@ -468,6 +497,12 @@ section .container .owl-nav{
     padding: 0 1.5rem;
     margin-top: 2rem;
     position: relative;
+}
+
+.testimonial-section .testimonial .testimonial-content .testimonial-text-box .btn{
+    padding: .3rem .5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
 }
 
 .testimonial-text-box i{
@@ -560,7 +595,47 @@ main .contact-section{
     color: var(--white);
     cursor: pointer;
 }
-
+/* input{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    background-color: rgba(136, 133, 133, 0.5);
+    color: var(--white);
+    border: none;
+    outline: none;
+}
+input::placeholder{
+    color: var(--white);
+}
+textarea{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    background-color: rgba(136, 133, 133, 0.5);
+    color: var(--white);
+    border: none;
+    outline: none;
+}
+textarea::placeholder{
+    color: var(--white);
+}
+.submit{
+    width: 40%;
+    background: none;
+    padding: 4px;
+    outline: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-left: 3%;
+    border: 2px solid rgb(190,190,190);
+    color: rgb(190,190,190);
+}
+.submit:hover{
+    border: 1px solid var(--white);
+    color: var(--white);
+    cursor: pointer;
+} */
 
 footer{
     width: auto;
@@ -600,7 +675,6 @@ footer a{
     }
     .nav .toggle-collapse{
         display: initial;
-        width: 95%;
     }
 
     main .site-title .main-message h1{
@@ -620,6 +694,9 @@ footer a{
 
     .service + .service{
         margin-right: 2em;
+    }
+    .equipment-list + .equipment-list{
+        /* margin-right: 2rem; */
     }
     .contact-section .contact-form{
         display: block;
