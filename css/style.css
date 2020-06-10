@@ -107,7 +107,7 @@ button.btn{
     background: var(--white);
     padding: 0 2rem;
     height: 0rem;
-    min-height: 10vh;
+    min-height: 11.5vh;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
@@ -133,10 +133,11 @@ button.btn{
 .nav .toggle-collapse .toggle-icons i{
     font-size: 1.4rem;
     color: var(--text-gray);
+    margin-top: 1rem;
 }
 
 .collapse{
-    height: 22rem;
+    height: 22.5rem;
 }
 
 .nav .nav-items{
@@ -165,6 +166,11 @@ button.btn{
     display: block;
     font-family: var(--Lexend);
 }
+.nav .nav-brand img{
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+}
 
 /* navbar */
 
@@ -172,10 +178,6 @@ button.btn{
 
 main .site-title{
     height: auto;
-    /* background: linear-gradient(135deg, rgba(89, 89, 201, 0.9) 0%, rgba(89, 89, 201, 0.9) 
-    100%), url("../img/logo1.png") center no-repeat;
-    background-size: 1000px;
-    background-position: center; */
     background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/comb-bees.jpg);
     background-size: cover;
     background-position: center;
@@ -343,10 +345,6 @@ section .container .owl-nav{
     border: 1px solid var(--white);
     color: #fff;
 }
-/* .service {
-    max-width: 500px;
-    margin: 0 auto;
-} */
 
 /*---------------- Our services section ---------------*/
 
@@ -375,8 +373,6 @@ section .container .owl-nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
 }
 
 .equipment-list{
@@ -384,7 +380,6 @@ section .container .owl-nav{
     height: auto;
     max-width: 400px;
     padding: 1rem;
-    /* margin: 2rem; */
     text-align: center;
     color: var(--clr-light);
     position: relative;
@@ -428,9 +423,7 @@ section .container .owl-nav{
 .equipment-list.beeplant::before{
     background: linear-gradient(rgba(0, 0,0,0.7), rgba(0,0,0,0.4)), url(../img/bee-nector.jpg);
 }
-/* .equipment-list + .equipment-list{
-    padding-left: 2rem;
-} */
+
 /*----------------- Equipments Section ----------------*/
 
 /*------------------ Contacts ------------------------*/
@@ -567,52 +560,7 @@ main .contact-section{
     color: var(--white);
     cursor: pointer;
 }
-/* input{
-    padding: 10px;
-    margin: 10px;
-    width: 70%;
-    background-color: rgba(136, 133, 133, 0.5);
-    color: var(--white);
-    border: none;
-    outline: none;
-}
 
-input::placeholder{
-    color: var(--white);
-}
-
-textarea{
-    padding: 10px;
-    margin: 10px;
-    width: 70%;
-    background-color: rgba(136, 133, 133, 0.5);
-    color: var(--white);
-    border: none;
-    outline: none;
-}
-
-textarea::placeholder{
-    color: var(--white);
-}
-
-.submit{
-    width: 40%;
-    background: none;
-    padding: 4px;
-    outline: none;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-left: 3%;
-    border: 2px solid rgb(190,190,190);
-    color: rgb(190,190,190);
-}
-
-.submit:hover{
-    border: 1px solid var(--white);
-    color: var(--white);
-    cursor: pointer;
-} */
 
 footer{
     width: auto;
@@ -652,6 +600,7 @@ footer a{
     }
     .nav .toggle-collapse{
         display: initial;
+        width: 95%;
     }
 
     main .site-title .main-message h1{
@@ -671,9 +620,6 @@ footer a{
 
     .service + .service{
         margin-right: 2em;
-    }
-    .equipment-list + .equipment-list{
-        /* margin-right: 2rem; */
     }
     .contact-section .contact-form{
         display: block;
