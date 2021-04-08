@@ -657,6 +657,39 @@ footer a{
 
 /*----------------- Main Content ------------------*/
 
+.till-number{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.fixed-sidebar{
+    position: fixed;
+    bottom: 5%;
+    right: 1px;
+}
+.fixed-sidebar ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.fa-whatsapp-square{
+    color: #128C7E;
+}
+.fa-facebook-square{
+    color: #3B5998;
+}
+.fixed-sidebar li{
+    padding: 0.5px;
+}
+
+.fab{
+    font-size: 4em;
+}
+.fab {
+    background-image: radial-gradient(at center, #FFFFFF 62%, transparent 10%);
+  }
 /* Viewport less than or equal to 750px */
 
 @media only screen and (max-width: 750px){
@@ -695,9 +728,7 @@ footer a{
     .service + .service{
         margin-right: 2em;
     }
-    .equipment-list + .equipment-list{
-        /* margin-right: 2rem; */
-    }
+    
     .contact-section .contact-form{
         display: block;
         width: 100%;
@@ -705,6 +736,15 @@ footer a{
     }
     .contact-section .submit{
         width: 60%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .till-number{
+        width: 80%;
+    }
+    .fab{
+        font-size: 2em;
     }
 }
 

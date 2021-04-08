@@ -38,6 +38,17 @@ $(document).ready(function(){
     AOS.init();
 });
 
+var scrltop = 0;
+$(window).scroll(function(){
+    var scroldown = $(this).scrollTop();
+    if(scrltop < scroldown){
+        $('.fixed-sidebar').hide();
+    }else{
+        $('.fixed-sidebar').show();
+    }
+    scrltop = scroldown
+});
+
 // const selectElement = (s) => document.querySelector(s);
 
 // selectElement('.toggle-collapse').addEvenetListener('click', () => {
