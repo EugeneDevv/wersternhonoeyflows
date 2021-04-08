@@ -657,6 +657,12 @@ footer a{
 
 /*----------------- Main Content ------------------*/
 
+.home-buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .till-number{
     display: block;
     margin-left: auto;
@@ -685,16 +691,24 @@ footer a{
 }
 
 .fab{
-    font-size: 4em;
+    font-size: 7em;
 }
 .fab {
     background-image: radial-gradient(at center, #FFFFFF 62%, transparent 10%);
   }
 /* Viewport less than or equal to 750px */
 
+@media only screen and (max-width: 1200px){
+    .fab{
+        font-size: 6em;
+    }
+}
 @media only screen and (max-width: 750px){
     strong{
         font-size: 1.3rem;
+    }
+    .fab{
+        font-size: 5em;
     }
     .nav{
         padding: 0 0.5rem;
