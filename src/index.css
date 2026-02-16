@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 45 30% 98%;
+    --foreground: 20 25% 10%;
+
+    --card: 42 40% 97%;
+    --card-foreground: 20 25% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 25% 10%;
+
+    --primary: 36 100% 50%;
+    --primary-foreground: 20 25% 8%;
+
+    --secondary: 150 35% 25%;
+    --secondary-foreground: 45 30% 96%;
+
+    --muted: 40 25% 93%;
+    --muted-foreground: 25 10% 42%;
+
+    --accent: 36 50% 92%;
+    --accent-foreground: 20 25% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 38 25% 88%;
+    --input: 38 25% 88%;
+    --ring: 36 100% 50%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --font-heading: 'Cormorant Garamond', serif;
+    --font-body: 'Outfit', sans-serif;
+  }
+
+  .dark {
+    --background: 25 20% 6%;
+    --foreground: 42 30% 92%;
+    --card: 25 18% 10%;
+    --card-foreground: 42 30% 92%;
+    --popover: 25 18% 10%;
+    --popover-foreground: 42 30% 92%;
+    --primary: 36 100% 50%;
+    --primary-foreground: 20 25% 8%;
+    --secondary: 150 35% 25%;
+    --secondary-foreground: 45 30% 96%;
+    --muted: 25 15% 16%;
+    --muted-foreground: 40 12% 55%;
+    --accent: 30 20% 16%;
+    --accent-foreground: 42 30% 92%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 25 15% 20%;
+    --input: 25 15% 20%;
+    --ring: 36 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer utilities {
+  .text-gradient-honey {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(36 100% 55%), hsl(28 90% 42%));
+  }
+
+  .bg-gradient-hero {
+    background: linear-gradient(
+      to bottom,
+      hsl(20 25% 6% / 0.55),
+      hsl(20 25% 6% / 0.35) 50%,
+      hsl(20 25% 6% / 0.65)
+    );
+  }
+
+  .bg-gradient-earth {
+    background: linear-gradient(160deg, hsl(150 35% 22%), hsl(155 30% 16%));
+  }
+
+  .bg-gradient-warm {
+    background: linear-gradient(135deg, hsl(36 100% 50% / 0.08), hsl(36 100% 50% / 0.02));
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
