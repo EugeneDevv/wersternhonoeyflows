@@ -5,8 +5,8 @@ const contacts = [
   {
     icon: Phone,
     label: "Phone",
-    value: "0704123059",
-    href: "tel:0704123059",
+    value: "0704866322 / 0740552922",
+    href: "tel:0704866322",
   },
   {
     icon: MapPin,
@@ -77,7 +77,7 @@ const ContactSection = () => {
             className="text-center"
           >
             <a
-              href="tel:0704123059"
+              href="tel:0704866322"
               className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-10 py-4 rounded-full font-body font-semibold text-lg hover:shadow-xl hover:shadow-primary/25 transition-all group"
             >
               Call Us Now

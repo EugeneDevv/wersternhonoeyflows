@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Download } from "lucide-react";
 import heroVideo from "@/assets/hero-video.mp4";
 
 const HeroSection = () => {
@@ -36,16 +37,18 @@ const HeroSection = () => {
 
           <div className="flex flex-wrap gap-4">
             <a
-              href="tel:0704123059"
+              href="#contact"
               className="bg-primary text-primary-foreground px-8 py-4 rounded-full font-body font-semibold hover:shadow-xl hover:shadow-primary/30 transition-all"
             >
-              Call Us Now...
+              Get in Touch
             </a>
             <a
-              href="#contact"
-              className="border border-background/30 text-background px-8 py-4 rounded-full font-body font-semibold hover:bg-background/10 transition-all"
+              href="/assets/westernhoneyflows.apk"
+              download
+              className="inline-flex items-center gap-3 border border-background/30 text-background px-8 py-4 rounded-full font-body font-semibold hover:bg-background/10 transition-all"
             >
-              Get in Touch
+              <Download className="w-5 h-5" />
+              Download App
             </a>
           </div>
         </motion.div>
